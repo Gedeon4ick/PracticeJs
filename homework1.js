@@ -34,4 +34,21 @@ function My(arr) {
   return newArr
 }
 
+function removeDuble(arr) {
+  if (Array.isArray(arr)) {
+    return [...new Set(arr)]
+  }
+}
+
+const set = new Set()
+console.log(set);
+set.add(1)
+console.log(set);
+set.add(2)
+console.log(set)
+set.add(1)
+console.log(set)
+
+console.log(removeDuble(myArr));
+
 console.log(My(myArr));
